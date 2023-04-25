@@ -45,6 +45,7 @@ export default function Home() {
 					{questions.map((question, index) => {
 						return (
 							<Card
+								key={index}
 								first={question.first && true}
 								last={question.last && true}
 								index={i + index}
