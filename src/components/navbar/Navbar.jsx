@@ -11,7 +11,8 @@ const Navbar = ({ language, setLanguage }) => {
 		<nav class=' z-50 w-screen bg-white border-gray-200 dark:bg-gray-900 fixed'>
 			<div class='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
 				<Link href='/' class='flex items-center'>
-					<img
+					<Image
+						fill
 						src='https://flowbite.com/docs/images/logo.svg'
 						class='h-8 mr-3'
 						alt='Flowbite Logo'
