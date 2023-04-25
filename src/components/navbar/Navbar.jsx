@@ -10,7 +10,7 @@ const Navbar = ({ language, setLanguage }) => {
 	return (
 		<nav class=' z-50 w-screen bg-white border-gray-200 dark:bg-gray-900 fixed'>
 			<div class='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-				<a href='/' class='flex items-center'>
+				<Link href='/' class='flex items-center'>
 					<img
 						src='https://flowbite.com/docs/images/logo.svg'
 						class='h-8 mr-3'
@@ -21,7 +21,7 @@ const Navbar = ({ language, setLanguage }) => {
 							? '100 Spørsmål'
 							: '100 Questions'}
 					</span>
-				</a>
+				</Link>
 				<div class='flex items-center md:order-2'>
 					<button
 						type='button'
