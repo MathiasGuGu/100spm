@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import 'flowbite';
 const Navbar = ({ language, setLanguage }) => {
 	const chooseLanguage = (lang) => {
