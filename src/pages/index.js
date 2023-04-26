@@ -46,7 +46,7 @@ export default function Home() {
         <Navbar language={language} setLanguage={setLanguage}></Navbar>
       </nav>
       <main
-        className={`overflow-x-hidden  flex flex-col items-center gap-12  h-screen w-screen bg-white  ${inter.className}`}
+        className={`overflow-x-hidden  flex flex-col items-center gap-12 h-auto  min-h-screen w-screen bg-white  ${inter.className}`}
       >
         <section>
           <Hero></Hero>
@@ -69,7 +69,7 @@ export default function Home() {
           </Link>
           <div className="flex flex-col gap-6 my-10 items-center justify-center w-[90%]">
             <div className=" h-36 bg-blue-100 w-full rounded-md flex items-center justify-evenly">
-              <div className="h-[80%] aspect-square  rounded flex items-center justify-center">
+              <div className="h-[60%] aspect-square  rounded flex items-center justify-center">
                 <BsQuestionSquare className="h-full w-full text-blue-300"></BsQuestionSquare>
               </div>
               <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
@@ -78,10 +78,10 @@ export default function Home() {
               </div>
             </div>
             <div className=" h-36 bg-blue-100 w-full rounded-md flex flex-row-reverse items-center justify-evenly">
-              <div className="h-[80%] aspect-square  rounded flex items-center justify-center">
+              <div className="h-[70%] aspect-square  rounded flex items-center justify-center">
                 <AiOutlinePlusSquare className=" h-full w-full text-blue-300"></AiOutlinePlusSquare>
               </div>
-              <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
+              <div className="h-[70%] w-[55%] px-4 flex flex-col items-start justify-center">
                 <h2 className="font-semibold text-lg">
                   Lag dine egne spørsmål
                 </h2>
