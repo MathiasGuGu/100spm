@@ -73,8 +73,9 @@ export default function Home() {
                 <BsQuestionSquare className="h-full w-full text-blue-300"></BsQuestionSquare>
               </div>
               <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
-                <h2 className="font-semibold text-lg">Spørsmål for alle</h2>
-                <p>varierte spørsmål for alle grupper</p>
+                <h2 className="font-semibold text-lg text-blue-900">
+                  Ferdig lagde spørsmål
+                </h2>
               </div>
             </div>
             <div className=" h-36 bg-blue-100 w-full rounded-md flex flex-row-reverse items-center justify-evenly">
@@ -82,10 +83,9 @@ export default function Home() {
                 <AiOutlinePlusSquare className=" h-full w-full text-blue-300"></AiOutlinePlusSquare>
               </div>
               <div className="h-[70%] w-[55%] px-4 flex flex-col items-start justify-center">
-                <h2 className="font-semibold text-lg">
+                <h2 className="font-semibold text-lg text-blue-900">
                   Lag dine egne spørsmål
                 </h2>
-                <p>Lag en bruker og lag dine egne spørsmål</p>
               </div>
             </div>
           </div>
