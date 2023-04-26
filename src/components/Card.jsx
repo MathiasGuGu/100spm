@@ -1,31 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset, velocity) => {
-	return Math.abs(offset) * velocity;
-};
-const variants = {
-	enter: (direction) => {
-		return {
-			x: direction > 0 ? 1000 : -1000,
-			opacity: 1,
-		};
-	},
-	center: {
-		zIndex: 1,
-		x: 0,
-		opacity: 1,
-	},
-	exit: (direction) => {
-		return {
-			zIndex: 0,
-			x: direction < 0 ? 1000 : -1000,
-			opacity: 1,
-		};
-	},
-};
-
 const Card = ({
 	order,
 	index,
