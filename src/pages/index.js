@@ -44,21 +44,19 @@ export default function Home() {
 			<main
 				className={` overflow-y-hidden flex items-center justify-center min-h-screen min-w-screen bg-white  ${inter.className}`}>
 				<section className=' overflow-x-hidden relative h-[500px] w-screen flex items-center justify-center'>
-					<AnimatePresence>
-						{questions.map((question, index) => {
-							return (
-								<Card
-									key={index}
-									order={index}
-									first={question.first ? true : false}
-									last={question.last ? true : false}
-									index={i}
-									questionNumber={i}
-									setIndex={setIndex}
-									text={question.text}></Card>
-							);
-						})}
-					</AnimatePresence>
+					{questions.map((question, index) => {
+						return (
+							<Card
+								key={index}
+								order={index}
+								first={question.first ? true : false}
+								last={question.last ? true : false}
+								index={i}
+								questionNumber={i}
+								setIndex={setIndex}
+								text={question.text}></Card>
+						);
+					})}
 				</section>
 			</main>
 		</>

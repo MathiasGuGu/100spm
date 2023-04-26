@@ -20,7 +20,7 @@ const variants = {
 	exit: (direction) => {
 		return {
 			zIndex: 0,
-			x: direction < 0 ? -1000 : 1000,
+			x: direction < 0 ? 1000 : -1000,
 			opacity: 1,
 		};
 	},
@@ -48,27 +48,6 @@ const Card = ({
 		return (
 			<AnimatePresence>
 				<motion.div
-					key={order}
-					custom={direction}
-					variants={variants}
-					initial='enter'
-					animate='center'
-					exit='exit'
-					transition={{
-						x: { type: 'spring', stiffness: 300, damping: 30 },
-					}}
-					drag='x'
-					dragConstraints={{ left: 0, right: 0 }}
-					dragElastic={1}
-					onDragEnd={(e, { offset, velocity }) => {
-						const swipe = swipePower(offset.x, velocity.x);
-
-						if (swipe < -swipeConfidenceThreshold) {
-							paginate(-1);
-						} else if (swipe > swipeConfidenceThreshold) {
-							paginate(1);
-						}
-					}}
 					className={`z-20 shadow-md absolute border border-blue-700 font-semibold text-2xl w-[90%] h-full  text-white bg-blue-600 rounded-lg 
 				flex items-center justify-center`}>
 					<div className='absolute top-6 left-6 px-6 py-2 text-base rounded-full bg-blue-600 flex items-center justify-center'>
