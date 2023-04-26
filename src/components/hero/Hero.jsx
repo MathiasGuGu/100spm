@@ -38,9 +38,7 @@ const Hero = () => {
           className="w-64 h-32 rounded-xl bg-red-300"
         ></motion.div>
         <motion.div className="flex items-center justify-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <h1 className="font-amatic text-6xl font-bold text-black  rotate-3  w-screen flex items-center justify-center ">
-            100 spørsmål
-          </h1>
+          <h1 className="font-amatic text-6xl font-bold text-black  rotate-3  w-screen flex items-center justify-center "></h1>
         </motion.div>
       </AnimatePresence>
     </div>

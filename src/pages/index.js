@@ -7,6 +7,8 @@ import { AnimatePresence } from "framer-motion";
 import Hero from "@/components/hero/Hero";
 import Link from "next/link";
 
+import { AiFillQuestionCircle, AiOutlinePlusSquare } from "react-icons/ai";
+import { BsQuestionSquare } from "react-icons/bs";
 const inter = Inter({ subsets: ["latin"] });
 
 const questions = [
@@ -44,12 +46,12 @@ export default function Home() {
         <Navbar language={language} setLanguage={setLanguage}></Navbar>
       </nav>
       <main
-        className={`overflow-x-hidden overflow-y-hidden flex flex-col items-center gap-12  h-screen w-screen bg-white  ${inter.className}`}
+        className={`overflow-x-hidden  flex flex-col items-center gap-12  h-screen w-screen bg-white  ${inter.className}`}
       >
         <section>
           <Hero></Hero>
         </section>
-        <section className="flex flex-col h-auto min-h-92 gap-6">
+        <section className="  py-6 flex flex-col items-center justify-center w-screen h-auto min-h-92 gap-6">
           <Link className="w-auto" href="sporsmal">
             <button
               type="button"
@@ -65,6 +67,28 @@ export default function Home() {
               </span>
             </button>
           </Link>
+          <div className="flex flex-col gap-6 my-10 items-center justify-center w-[90%]">
+            <div className=" h-36 bg-blue-200 w-full rounded-md flex items-center justify-evenly">
+              <div className="h-[80%] aspect-square  rounded flex items-center justify-center">
+                <BsQuestionSquare className="h-full w-full text-blue-400"></BsQuestionSquare>
+              </div>
+              <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
+                <h2 className="font-semibold text-lg">Spørsmål for alle</h2>
+                <p>varierte spørsmål for alle grupper</p>
+              </div>
+            </div>
+            <div className=" h-36 bg-blue-200 w-full rounded-md flex flex-row-reverse items-center justify-evenly">
+              <div className="h-[80%] aspect-square  rounded flex items-center justify-center">
+                <AiOutlinePlusSquare className=" h-full w-full text-blue-400"></AiOutlinePlusSquare>
+              </div>
+              <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
+                <h2 className="font-semibold text-lg">
+                  Lag dine egne spørsmål
+                </h2>
+                <p>Lag en bruker og lag dine egne spørsmål</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </>
