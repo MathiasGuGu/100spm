@@ -44,7 +44,7 @@ export default function Home() {
         <Navbar language={language} setLanguage={setLanguage}></Navbar>
       </nav>
       <main
-        className={`overflow-x-hidden flex flex-col items-center gap-12  h-screen w-screen bg-white  ${inter.className}`}
+        className={`overflow-x-hidden overflow-y-hidden flex flex-col items-center gap-12  h-screen w-screen bg-white  ${inter.className}`}
       >
         <section>
           <Hero></Hero>
