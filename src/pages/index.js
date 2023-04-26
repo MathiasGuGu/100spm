@@ -35,7 +35,6 @@ const questions = [
 export default function Home() {
 	const [language, setLanguage] = useState('norsk');
 	const [i, setIndex] = useState(0);
-	const [showCard, setShowCard] = useState(true);
 
 	return (
 		<>
@@ -44,7 +43,7 @@ export default function Home() {
 			</nav>
 			<main
 				className={` overflow-y-hidden flex items-center justify-center min-h-screen min-w-screen bg-white  ${inter.className}`}>
-				<section className='relative h-[500px] w-screen flex items-center justify-center'>
+				<section className=' overflow-x-hidden relative h-[500px] w-screen flex items-center justify-center'>
 					<AnimatePresence>
 						{questions.map((question, index) => {
 							return (
