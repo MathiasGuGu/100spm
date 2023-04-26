@@ -68,18 +68,18 @@ export default function Home() {
             </button>
           </Link>
           <div className="flex flex-col gap-6 my-10 items-center justify-center w-[90%]">
-            <div className=" h-36 bg-blue-200 w-full rounded-md flex items-center justify-evenly">
+            <div className=" h-36 bg-blue-100 w-full rounded-md flex items-center justify-evenly">
               <div className="h-[80%] aspect-square  rounded flex items-center justify-center">
-                <BsQuestionSquare className="h-full w-full text-blue-400"></BsQuestionSquare>
+                <BsQuestionSquare className="h-full w-full text-blue-300"></BsQuestionSquare>
               </div>
               <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
                 <h2 className="font-semibold text-lg">Spørsmål for alle</h2>
                 <p>varierte spørsmål for alle grupper</p>
               </div>
             </div>
-            <div className=" h-36 bg-blue-200 w-full rounded-md flex flex-row-reverse items-center justify-evenly">
+            <div className=" h-36 bg-blue-100 w-full rounded-md flex flex-row-reverse items-center justify-evenly">
               <div className="h-[80%] aspect-square  rounded flex items-center justify-center">
-                <AiOutlinePlusSquare className=" h-full w-full text-blue-400"></AiOutlinePlusSquare>
+                <AiOutlinePlusSquare className=" h-full w-full text-blue-300"></AiOutlinePlusSquare>
               </div>
               <div className="h-[80%] w-[55%] px-4 flex flex-col items-start justify-center">
                 <h2 className="font-semibold text-lg">
