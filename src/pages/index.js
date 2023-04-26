@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/navbar/Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from '@/components/Card';
+import { AnimatePresence } from 'framer-motion';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -34,26 +35,31 @@ const questions = [
 export default function Home() {
 	const [language, setLanguage] = useState('norsk');
 	const [i, setIndex] = useState(0);
+	const [showCard, setShowCard] = useState(true);
+
 	return (
 		<>
 			<nav>
 				<Navbar language={language} setLanguage={setLanguage}></Navbar>
 			</nav>
 			<main
-				className={` overflow-y-hidden flex items-center justify-center min-h-screen min-w-screen bg-gray-900 box-border ${inter.className}`}>
+				className={` overflow-y-hidden flex items-center justify-center min-h-screen min-w-screen bg-white  ${inter.className}`}>
 				<section className='relative h-[500px] w-screen flex items-center justify-center'>
-					{questions.map((question, index) => {
-						return (
-							<Card
-								key={index}
-								first={question.first && true}
-								last={question.last && true}
-								index={i + index}
-								questionNumber={index + 1}
-								setIndex={setIndex}
-								text={question.text}></Card>
-						);
-					})}
+					<AnimatePresence>
+						{questions.map((question, index) => {
+							return (
+								<Card
+									key={index}
+									order={index}
+									first={question.first ? true : false}
+									last={question.last ? true : false}
+									index={i}
+									questionNumber={i}
+									setIndex={setIndex}
+									text={question.text}></Card>
+							);
+						})}
+					</AnimatePresence>
 				</section>
 			</main>
 		</>
