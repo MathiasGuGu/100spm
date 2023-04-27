@@ -79,7 +79,7 @@ export default function Home() {
 							viewport={{
 								once: true,
 							}}
-							className=' h-32 shadow bg-blue-100 w-full rounded-md flex items-center justify-evenly'>
+							className=' h-28 shadow bg-blue-100 w-full rounded-md flex items-center justify-evenly'>
 							<div className='h-[60%] aspect-square  rounded flex items-center justify-center'>
 								<BsQuestionSquare className='h-full w-full text-blue-300'></BsQuestionSquare>
 							</div>
@@ -90,7 +90,7 @@ export default function Home() {
 							</div>
 						</motion.div>
 						<motion.div
-							initial={{ x: 200 }}
+							initial={{ x: -200 }}
 							whileInView={{ x: 0 }}
 							transition={{
 								duration: 0.1,
@@ -102,7 +102,7 @@ export default function Home() {
 							viewport={{
 								once: true,
 							}}
-							className=' h-32 shadow bg-blue-100 w-full rounded-md flex flex-row-reverse items-center justify-evenly'>
+							className=' h-28 shadow bg-blue-100 w-full rounded-md flex flex-row-reverse items-center justify-evenly'>
 							<div className='h-[70%] aspect-square  rounded flex items-center justify-center'>
 								<AiOutlinePlusSquare className=' h-full w-full text-blue-300'></AiOutlinePlusSquare>
 							</div>
@@ -125,7 +125,7 @@ export default function Home() {
 							viewport={{
 								once: true,
 							}}
-							className=' h-32 shadow bg-blue-100 w-full rounded-md flex items-center justify-evenly'>
+							className=' h-28 shadow bg-blue-100 w-full rounded-md flex items-center justify-evenly'>
 							<div className='h-[60%] aspect-square  rounded flex items-center justify-center'>
 								<BsQuestionSquare className='h-full w-full text-blue-300'></BsQuestionSquare>
 							</div>
